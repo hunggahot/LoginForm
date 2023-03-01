@@ -2,20 +2,23 @@
 <html>
 
 <head>
-  <title>Trang Đăng Nhập</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Trang Đăng Nhập</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Đăng Nhập</h1>
-  <form>
-    <label for="username">Tên Đăng Nhập:</label>
-    <input type="text" id="username" name="txtUserName" required>
-    <label for="password">Mật Khẩu:</label>
-    <input type="password" id="password" name="txtpassword" required>
-    <button type="submit" name="btnlogin">Đăng nhập</button>
-  </form>
-  <script src="script.js"></script>
+    <div class="login-container">
+        <h1>Đăng Nhập</h1>
+        <form onsubmit="return login()">
+            <label for="username">Tên Đăng Nhập:</label>
+            <input type="text" id="username" name="txtUserName" required>
+            <label for="password">Mật Khẩu:</label>
+            <input type="password" id="password" name="txtpassword" required>
+            <button type="submit" name="btnlogin">Đăng nhập</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
